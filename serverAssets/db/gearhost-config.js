@@ -8,7 +8,9 @@ mongoose.connect(conectStr, {
   useNewUrlParser: true
 })
 
-connection.on('error', err => console.log('database error', err))
+connection.on('error', err => {
+  console.log('database error', err)
+})
 
 connection.once('open', () => {
   console.log('sucessful connection')

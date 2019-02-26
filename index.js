@@ -3,6 +3,8 @@ let bp = require('body-parser')
 let server = express()
 let port = 3000
 
+require('./serverAssets/db/gearhost-config')
+
 server.use(bp.json())
 server.use(bp.urlencoded({
   extended: true
