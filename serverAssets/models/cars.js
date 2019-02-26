@@ -2,7 +2,7 @@ let mongoose = require('mongoose')
 let Schema = mongoose.Schema
 
 
-let schema = new Schema({
+let car = new Schema({
   price: {
     type: Number,
     required: true
@@ -25,4 +25,4 @@ let schema = new Schema({
   }
 })
 
-module.exports = mongoose.model('Cars', schema)
+module.exports = mongoose.model('Cars', car)
